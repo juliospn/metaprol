@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Metaprol</title>
+        <link 
+            rel="icon" 
+            type="image/x-icon" 
+            href="assets/favicon.ico" 
+        />
+        <link href="./reset.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Barra de navegação responsiva -->
+        <header class="cabeçalhoPrincipal">
+            <div class="cabeçalhoContainer">
+                <a class="logo" href="index.html">
+                    <img src="assets/logo.png" alt="Metaprol" class="logo_img">
+                </a>
+            <div class="menu__container">
+                <li class="menu__home"><a href="./index.html">Home</a></li>
+                <li class="menu__lista"><a href="./trabalhos.html">Trabalhos</a></li>
+                <li class="menu__lista"><a href="./contato.html">Contato</a></li>
+            </div>
+        </header>
+        <!--  Barra de navegação responsiva -->
+
+        <!-- Formulário -->
+        <main>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-mensagem" required></textarea>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
+
+            <table>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>E-mail</th>
+                        <th>Telefone</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>José de Oliveira</td>
+						<td>jose.oliveira@metaprol.com.br</td>
+                        <td>(31) 9988-1441</td>
+					</tr>
+					<tr>
+						<td>Francisco Manoel	</td>
+						<td>francisco.manoel@metaprol.com.br	</td>
+                        <td>(31) 8894-4663</td>
+					</tr>
+					<tr>
+						<td>Fernando Oliveira	</td>
+						<td>fernando.oliveira@metaprol.com.br		</td>
+                        <td>(31) 8860-0519
+                        </td>
+					</tr>
+                    <tr>
+						<td>Antônio Marcos	</td>
+						<td>antonio.marcos@metaprol.com.br	</td>
+                        <td>(31) 8871-1795</td>
+					</tr>
+                    <tr>
+						<td>Ana Lúcia	</td>
+						<td>ana.lucia@metaprol.com.br	</td>
+                        <td></td>
+					</tr>
+                    <tr>
+						<td>Maria Aparecida</td>
+						<td>maria.aparecida@metaprol.com.br	</td>
+                        <td></td>
+					</tr>
+                    <tr>
+						<td>Peter Oliveira	</td>
+						<td>peter.oliveira@metaprol.com.br	</td>
+                        <td></td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+        <!-- Footer-->
+        <footer class="footer-contato">
+            <div class="contatos">
+                <p>Rua 20 de Novembro, 278, sl 212, Edifício Euristhenes de Carvalho</p>
+                <p>Centro - Timoteo | MG | CEP 35.180-040</p>
+                <p>Telefones: 55 31 3849-4338 | 55 31 3039-1577</p>
+            </div>
+            <div>
+                <p>Copyright &copy; Metaprol 2023</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

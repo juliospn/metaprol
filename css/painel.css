@@ -1,0 +1,45 @@
+.texto__painel {
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+.formato__painel {
+    max-width: 1300px;
+    display: inline-block;
+}
+
+.botao__contato {
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgb(226, 226, 226);
+    padding: 2rem;
+    margin: 0 6rem 1rem 6rem;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.formato__painel  :hover {
+    color: rgb(63, 63, 63);
+    text-decoration: underline;
+    background-color: rgb(255, 255, 255);
+}
+
+/* parte mobile */
+@media(max-width: 768px) {  
+    .botao__contato {
+        margin: 0rem 2rem 1rem 2rem;
+        display: inline-flex;
+    }
+}
+
+/* parte tablet */
+@media(min-width:768px) and (max-width:1120px) {
+    .botao__contato {
+        margin: 0rem 2rem 1rem 2rem;
+        width: 85%;
+        display: inline-flex;
+    }
+}

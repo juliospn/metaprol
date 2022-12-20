@@ -1,0 +1,65 @@
+.container__card {
+    display: flex;
+    border-radius: 5px;
+    width: 85%;
+    max-width: 1250px ;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.formato__card {
+    border-radius: 5px;
+    background-color: #696969;
+    padding-top: 0.1rem;
+    margin-inline: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.432);
+}
+
+.formato__card2 {
+    background-color: rgb(80, 80, 80);
+    border-end-end-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.432);
+    list-style: none;
+}
+
+.titulo__card {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: calc(1.325rem + 0.9vw);
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.texto__card {
+    margin: 1rem;
+    text-align: justify;
+}
+
+/* parte mobile */
+@media(max-width: 768px) {
+    .container__card {
+        display: flex;
+        flex-direction: column ;
+        width: 95%;
+        }
+
+    .formato__card {
+        margin-bottom: 2rem;
+    }
+}
+
+/* parte tablet */
+@media(min-width:768px) and (max-width:1120px) {
+    .container__card {
+        width: 88%;
+        margin: 0 auto;
+        
+    }
+
+    .formato__card {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}

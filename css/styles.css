@@ -1,0 +1,27 @@
+@import url("./cabeçalho.css");
+@import url("./sobre-metaprol.css");
+@import url("./painel.css");
+@import url("./cards.css");
+@import url("./footer.css");
+@import url("./contato.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: rgb(56, 56, 56);
+  min-width: 330px;
+}
+
+.centralizador {
+  margin: auto;
+  max-width: 1350px;
+}

@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quando', serif;
+    scroll-behavior: smooth;
+}
+
+.segura-footer {
+    position: relative; /* é necessário definir a posição como "relative" para que o footer seja posicionado em relação a ele */
+    }
+
+footer {
+    background-color: rgb(39, 39, 39);;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 130px;
+    width: 100%;
+    bottom: 0;  
+    position: absolute;
+    padding-top: 1%;
+    padding-bottom: 3px;
+}
+  
+.contatos {
+    font-size: 0.9rem;
+    margin: 0.5rem;
+}
+
+.footer-contato {
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* parte mobile */
+@media(max-width: 768px) {
+    footer {
+        position: static;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+}
+
+/* parte tablet */
+@media(min-width:768px) and (max-width:1173px) {
+    footer {
+        position: static;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+}
+

@@ -6,7 +6,7 @@
     width: 85%;
     max-width: 1250px ;
     margin: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 3%;
     column-count: 3; /* Define duas colunas */
     column-width: 300px; /* Define o tamanho das colunas em 300 pixels */
     column-gap: 20px; /* Define um espaçamento de 20 pixels entre as colunas */
@@ -27,7 +27,7 @@
     background-color: #696969;
     padding-top: 0.1rem;
     margin-inline: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.432);
+    border: 1px solid rgba(0, 0, 0, 0.432);
     margin-bottom: 3.5%;
 }
 
@@ -61,10 +61,10 @@ footer {
 
 @media(max-width: 768px) {
     .cabeçalhoContainer {
-		width: 110%;
+		width: 100%;
 	}
 
 	.footer-contato {
-		width: 110%;
+		width: 100%;
 	}
 }

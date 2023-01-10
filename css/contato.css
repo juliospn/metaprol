@@ -81,11 +81,11 @@ td, th {
 /* parte mobile */
 @media(max-width: 768px) {
     .cabeçalhoContainer {
-		width: 110%;
+		width: 100%;
 	}
 
-	.footer-contato {
-		width: 110%;
+    .footer-contato {
+		width: 100%;
 	}
 	
 	main {

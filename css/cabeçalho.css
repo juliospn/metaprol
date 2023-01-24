@@ -6,6 +6,19 @@
     border-bottom: solid 1px rgb(255, 0, 0);
 }
 
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.93);
+    z-index: 100;
+}
+
+.sub-menu__item.hover {
+    background-color: rgb(214, 214, 214);
+}
+
 .menu__container {
     display: flex;
     flex-direction: row;
@@ -21,7 +34,7 @@
     display: block;
 }
 
-.menu__home a {
+.menu__item a {
     color: rgb(46, 46, 46);
     text-decoration: none;
     font-size: 1.2em;
@@ -30,7 +43,7 @@
     display: block;
 }
 
-.menu__home :hover {
+.menu__item :hover {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.2em;
@@ -41,11 +54,10 @@
 
 .menu__lista {
     font-weight: 700;
+    position: relative;
 }
 
 .menu__lista :hover {
-    background-color: rgb(214, 214, 214);
-    border-bottom-color: solid 1px rgb(117, 117, 117);
     color: rgb(0, 0, 0);
 }
 
@@ -71,7 +83,6 @@
 @media(max-width: 800px) {
     .cabeçalhoPrincipal .cabeçalhoContainer {
         flex-direction: column;
-        
     }
 
     .logo {

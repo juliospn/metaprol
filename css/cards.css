@@ -13,6 +13,7 @@
     padding-top: 0.1rem;
     margin-inline: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.432);
+    max-width: 410px;
 }
 
 .formato__card2 {
@@ -21,12 +22,13 @@
     border-bottom-left-radius: 5px;
     border-top: 0.5px solid rgba(255, 255, 255, 0.432);
     list-style: none;
+    text-align: justify;
 }
 
 .titulo__card {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-size: calc(1.325rem + 0.9vw);
+    font-size: 2.5rem;
     text-align: left;
     margin-left: 1rem;
 }
@@ -42,13 +44,21 @@
         display: flex;
         flex-direction: column ;
         width: 95%;
-        }
+        align-items: center;
+    }
 
     .formato__card {
         margin-bottom: 2rem;
     }
-}
 
+    .texto__card {
+        font-size: 0.88rem;
+    }
+
+    .titulo__card {
+        font-size: 1.8rem;
+}
+}
 /* parte tablet */
 @media(min-width:768px) and (max-width:1120px) {
     .container__card {
@@ -61,5 +71,9 @@
         width: 90%;
         margin: 0 auto;
         margin-bottom: 2rem;
+    }
+
+    .texto__card {
+        font-size: 0.9rem;
     }
 }

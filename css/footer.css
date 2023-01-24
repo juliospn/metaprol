@@ -20,6 +20,7 @@ footer {
     position: absolute;
     padding-bottom: 3px;
     height: fit-content;
+    padding-top: 0.2rem;
 }
   
 .contatos {
@@ -31,7 +32,6 @@ footer {
     position: static;
     bottom: 0;
     width: 100%;
-    padding-top: 0.2rem;
 }
 
 

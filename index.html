@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Empresa de consultoria no mercado de aços e ferros fundidos." />
+        <meta name="abstract" content="Metaprol - Timóteo, MG">
+        <meta name="keywords" content="metaprol, consultoria, metalurgica, peças fundidas, ligas metálicas">
+        <meta name="author" content="Julio Nascimento - https://github.com/juliospn" />
+        <meta name="url" content="https://www.metaprol.com.br">
         <title>Metaprol</title>
         <link 
             rel="icon" 
@@ -22,24 +25,53 @@
                     <img src="assets/logo.png" alt="Metaprol" class="logo_img">
                 </a>
             <div class="menu__container">
-                <li class="menu__home"><a href="./index.html">Home</a></li>
-                <li class="menu__lista"><a href="./trabalhos.html">Trabalhos</a></li>
-                <li class="menu__lista"><a href="./contato.html">Contato</a></li>
+                <li class="menu__item"><a href="./index.html">Home</a></li>
+                
+                <li class="menu__lista"><a href="./trabalhos.html">Trabalhos</a>
+                    <ul class="sub-menu">
+                        <li><a class="sub-menu__item" href="./pesquisas.html">Pesquisas</a></li>
+                        <li><a class="sub-menu__item" href="./pelotizaçao.html">Pelotização</a></li>
+                        <li><a class="sub-menu__item" href="./siderurgica.html">Siderúrgica</a></li>
+                        <li><a class="sub-menu__item" href="./mineraçao.html">Mineração</a></li>
+                        <li><a class="sub-menu__item" href="./sinterização.html">Sinterização</a></li>
+                        <li><a class="sub-menu__item" href="./hidreletrica.html">Hidrelétrica</a></li>
+                      </ul>
+                </li>
+
+                <li class="menu__item"><a href="./contato.html">Contato</a></li>
             </div>
         </header>
         <!--  Barra de navegação responsiva -->
 
         <!-- Primeira tela-->
-        <div >
+        <div class="container">
             <div class="conteudo__container">
-                    <img 
-                    class="imagem__trabalhadores" 
-                    src="./assets/fundição.jpg" 
-                    alt="Trabalhadores" />
-                <div class="container__sobre">
+                <div id="slider-container">
+                    <div class="slide active">
+                        <img 
+                        class="imagem__trabalhadores" 
+                        src="./assets/fundição.jpg" 
+                        alt="Trabalhadores" />
+                    </div>
+                    <div class="slide">
+                        <img 
+                        class="imagem__trabalhadores" 
+                        src="./imagens/consultores2.jpeg" 
+                        alt="imagem 2" />
+                    </div>
+                    <div class="slide">
+                        <img 
+                        class="imagem__trabalhadores" 
+                        src="./imagens/metalurgical.jpg" 
+                        alt="Imagem 3" />
+                    </div>
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                  </div>
+                
+                    <div class="container__sobre">
                     <h1 class="titulo__sobre">Sobre nós</h1>
-                    <p class="texto__sobre">A Equipe da Metaprol atua, juntamente com as empresas clientes de peças fundidas especiais, buscando melhorar o desempenho das peças fundidas em serviço, elevando assim a produtividade das empresas. Buscamos conectar profissionais desenolvendo a inovação entre especialistas regionais e globais.
-                    </p>
+                    <p class="texto__sobre">A Equipe da Metaprol atua, juntamente com as empresas clientes de peças fundidas especiais, buscando melhorar o desempenho das peças fundidas em serviço, elevando assim a produtividade das empresas. Buscamos conectar profissionais desenolvendo a inovação entre especialistas regionais e globais.</p>
                     <p class="texto__sobre"> Estudamos a redução do custo, o prazo de fornecimento e o estoque dessas peças pra estimular o uso de materiais mais nobres e de melhor desempenho, o que impactará expressivamente nos resultados, metodologia e gerenciamento de nossos clientes.</p>
                 </div>
             </div>
@@ -50,10 +82,11 @@
                     <div class="formato__card">
                         <div>
                             <h2 class="titulo__card">Pesquisas</h2>
-                            <p class="texto__card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            <p class="texto__card">A Metaprol oferece um serviço de pesquisa de ponta para seus clientes, permitindo que eles tenham acesso a informações precisas e atualizadas sobre os materiais e processos de fabricação que utilizam. Nossos especialistas possuem amplo conhecimento em tecnologias avançadas de análise de materiais e processos de fabricação, o que nos permite realizar pesquisas de alta qualidade e fornecer resultados precisos.</p> 
+                            <p class="texto__card">Confira em "saiba mais" nosso acervo de pesquisas e desenvolvimentos.</p>
                         </div>
                         <div class="formato__card2">
-                            <li class="botao__saibamais"><a href="./trabalhos.html">Saiba mais</a></li>
+                            <li class="botao__saibamais"><a href="./pesquisas.html">Saiba mais</a></li>
                         </div>
                     </div>
                 </div>
@@ -61,7 +94,12 @@
                     <div class="formato__card">
                         <div>
                             <h2 class="titulo__card">Nossos serviços</h2>
-                            <p class="texto__card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                                                       
+                            <p class="texto__card">- Análise de materiais: realizamos análises químicas e mecânicas de materiais metálicos e não metálicos, além de ensaios de resistência e deformação.</p>
+                                
+                            <p class="texto__card">- Projeto de processos de fabricação: desenvolvemos soluções de projeto de processos de fabricação personalizadas para atender às necessidades específicas de nossos clientes.</p>
+                                
+                            <p class="texto__card">- Otimização de processos de produção: ajudamos as empresas a otimizar seus processos de produção, aumentando a eficiência e reduzindo</p>
                         </div>
                         <div class="formato__card2">
                             <li class="botao__saibamais"><a href="./trabalhos.html">Saiba mais</a></li>
@@ -72,7 +110,8 @@
                     <div class="formato__card">
                         <div>
                             <h2 class="titulo__card">Nossos produtos</h2>
-                            <p class="texto__card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            <p class="texto__card">A Metaprol oferece uma ampla gama de produtos para atender às necessidades dos seus clientes na indústria metalúrgica. Nossos produtos incluem soluções de projeto de processos de fabricação, análise de materiais e otimização de processos de produção.</p> 
+                            <p class="texto__card">Nossos produtos são desenvolvidos por nossa equipe de especialistas altamente qualificados e experientes, usando tecnologias avançadas e processos inovadores. Com os produtos da Metaprol, os clientes podem ter certeza de obter resultados precisos e confiáveis, aumentando a eficiência e reduzindo os custos.</p>
                         </div>
                         <div class="formato__card2">
                             <li class="botao__saibamais"><a href="./trabalhos.html">Saiba mais</a></li>
@@ -93,5 +132,9 @@
                 <p>Copyright &copy; Metaprol 2023</p>
             </div>
         </footer>
+
+        <!-- JavaScript -->
+        <script src="./script/main.js"></script>
+        <script src="./script/menu.js"></script>
     </body>
 </html>

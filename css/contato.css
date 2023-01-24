@@ -1,10 +1,11 @@
 main {
-	margin: 3% auto;
+	margin: 2rem auto;
 	display: flex;
 }
 
 form {
 	margin: 0 auto;
+	padding-top: 1rem;
 }
 
 form label, form legend {
@@ -54,7 +55,7 @@ form label, form legend {
 }
 
 table {
-	margin: 0 auto;
+	margin: 1rem auto;
 	max-height: 150px;
 	font-size: 25,8px;
 	color: rgb(241, 241, 241);
@@ -171,7 +172,7 @@ td, th {
 	}
 }
 
-@media(max-width: 330px) {
+@media(max-width: 332px) {
 
 	.menu__container {
 		scale: 0.83;
